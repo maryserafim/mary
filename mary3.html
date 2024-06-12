@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Como Perder um Homem em 10 Dias</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #ffedbb;
+           overflow: hidden;
+       }
+       header {
+           background-color: #b99a0c;
+           color: #ffffff;
+           padding: 20px;
+           text-align: center;
+       }
+       .container {
+           max-width: 540px;
+           margin: 20px auto;
+           padding: 0 20px;
+       }
+       .intro {
+           background-color: #ffffff;
+           padding: 20px;
+           border-radius: 5px;
+           box-shadow: 0 2px 5px rgba(245, 240, 224, 0.1);
+           color: black;
+       }
+       .intro h2 {
+           margin-top: 0;
+       }
+       .intro p {
+           margin-bottom: 0;
+       }
+       a {
+           display: block;
+           margin: 20px 0;
+           background-color: #f0e98c;
+           color: #000000;
+           padding: 10px;
+           text-align: center;
+           text-decoration: none;
+           border-radius: 5px;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+       }
+       .star {
+           position: absolute;
+           width: 20px;
+           height: 20px;
+           background-color: rgb(255, 94, 0);
+           clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+           animation: fall 1.5s linear forwards;
+       }
+       @keyframes fall {
+           to {
+               transform: translateY(100vh);
+               opacity: 0;
+           }
+       }
+   </style>
+</head>
+<body>
+   <header>
+       <h1>Como Perder um Homem em 10 Dias</h1>
+   </header>
+   <div class="container">
+       <div class="intro">
+           <img src="htl.jpg" alt="minha imagem" style="width: 100%; height: auto;">
+           <a href="https://drive.google.com/file/d/1FBYh3_NYL1AamhpugTLKSmrQRjC_VuDL/view">Clique aqui para assistir ao filme</a>
+       </div>
+   </div>
+   
+   <script>
+       function createStar(x, y) {
+           const star = document.createElement('div');
+           star.className = 'star';
+           star.style.left = `${x}px`;
+           star.style.top = `${y}px`;
+           document.body.appendChild(star);
+
+           setTimeout(() => {
+               star.remove();
+           }, 1500);
+       }
+
+       document.addEventListener('click', event => {
+           const x = event.clientX;
+           const y = event.clientY;
+
+           for (let i = 0; i < 10; i++) {
+               setTimeout(() => {
+                   createStar(x + Math.random() * 100 - 50, y);
+               }, i * 100);
+           }
+       });
+   </script>
+</body>
+</html>

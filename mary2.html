@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>5 cortes do filme como perder um homem em 10 dias</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #ffedbb;
+       }
+       header {
+           background-color: #b99a0c;
+           color: #fff;
+           padding: 20px;
+           text-align: center;
+       }
+       h1 {
+           margin-top: 21.44px;
+       }
+       .container {
+           max-width: 800px;
+           margin: 20px auto;
+           padding: 0 20px;
+       }
+       .scene {
+           margin-bottom: 20px;
+           padding: 20px;
+           background-color: #ffffff;
+           border-radius: 5px;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+       }
+       .scene h2 {
+           margin-top: 0;
+           color: black;
+       }
+       .scene p {
+           margin-bottom: 0;
+           color: black;
+       }
+       a {
+           display: block;
+           margin: 20px 0;
+           background-color: #f0e98c;
+           color: #000000;
+           padding: 10px;
+           text-align: center;
+           text-decoration: none;
+           border-radius: 5px;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+       }
+       .confetti {
+           position: absolute;
+           width: 10px;
+           height: 20px;
+           background-color: red;
+           opacity: 0.8;
+           transform: rotate(45deg);
+           animation: confettiMove 1.5s ease-out forwards;
+       }
+       @keyframes confettiMove {
+           to {
+               transform: translate(var(--translate-x), var(--translate-y)) rotate(720deg);
+               opacity: 0;
+           }
+       }
+   </style>
+</head>
+<body>
+   <header>
+       <h1>5 cortes do filme como perder um homem em 10 dias</h1>
+   </header>
+   <div class="container">
+       <div class="scene">
+           <h2>O jogo de basquete</h2>
+           <p>Andy e Ben saem para assistir a um jogo de basquete e Andy faz com que Ben perca a melhor parte de jogo.</p>
+           <p></p>
+           <iframe width="320" height="240" src="https://www.youtube.com/embed/xN2JhLUbuiE?si=gpSWo9VrXhNl68Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+       <div class="scene">
+           <h2>O jantar</h2>
+           <p>Ben convida Andy para jantar em sua casa e prepara uma carne deliciosa como refeição. Mesmo gostando de carne, Andy finge não gostar, então ambos são obrigados a ir a um restaurante vegetariano para não perder a noite.</p>
+           <p></p>
+           <iframe width="320" height="240" src="https://www.youtube.com/embed/-Gwkey8xLtg?si=Ra9sE99LiZ1dK2wX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+       <div class="scene">
+           <h2>Quando eles descobrem das apostas</h2>
+           <p>Andy e Ben descobrem das apostas um do outro. Andy fica sabendo pelos amigos de Ben, que foram influenciados por Judy Spears e Judy Green a contar. Ben descobre pela própria chefe de Andy, que sem saber que Ben era o homem com quem Andy estava saindo, acaba contando de todo o artigo que seria produzido.</p>
+           <p></p>
+           <iframe width="320" height="240" src="https://www.youtube.com/embed/J9BZuizEOzY?si=u3d0IfOmKIp2xS8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+       <div class="scene">
+           <h2>"Samambaia do amor"</h2>
+           <p>Andy aparece em um dos encontros de Ben com seus amigos.</p>
+           <p></p>
+           <iframe width="320" height="240" src="https://www.youtube.com/embed/W2Q27LruEnA?si=4FAzz5DX93aDEzK9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+       <div class="scene">
+           <h2>Ultimo artigo de Andy na Composure</h2>
+           <p>Andy escreve seu ultimo artigo para a revista Composure, mas ele não se remete a mais uma coluna "Como fazer" e sim a uma declaração.</p>
+           <p></p>
+           <iframe width="320" height="240" src="https://www.youtube.com/embed/FhhG89qQSDY?si=do6XrNnl519peG0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+   </div>
+   <a href="mary3.html">Clique aqui para ter acesso ao filme</a>
+
+   <script>
+       function getRandomColor() {
+           const colors = ['#ff0', '#f00', '#0f0', '#00f', '#f0f', '#0ff'];
+           return colors[Math.floor(Math.random() * colors.length)];
+       }
+
+       function createConfetti(x, y) {
+           const confetti = document.createElement('div');
+           confetti.className = 'confetti';
+           confetti.style.left = `${x}px`;
+           confetti.style.top = `${y}px`;
+           confetti.style.backgroundColor = getRandomColor();
+           confetti.style.setProperty('--translate-x', `${Math.random() * 200 - 100}px`);
+           confetti.style.setProperty('--translate-y', `${Math.random() * 200 - 100}px`);
+           document.body.appendChild(confetti);
+
+           setTimeout(() => {
+               confetti.remove();
+           }, 1500);
+       }
+
+       document.addEventListener('click', event => {
+           const x = event.clientX;
+           const y = event.clientY;
+
+           for (let i = 0; i < 30; i++) {
+               setTimeout(() => {
+                   createConfetti(x, y);
+               }, i * 20);
+           }
+       });
+   </script>
+</body>
+</html>
